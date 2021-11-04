@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JS demo</title>
+	<!-- css  -->
+	<link href="myStyles.css" rel="stylesheet" >
+	
+	
+	<script type="text/javascript">
+
+		document.write("<h1>Road Time Calculator</h1>"); //using HTML tags
+		
+		//variables for calculations
+		var name;
+		var distance;
+		var speed;
+		
+		
+		//asking the user for input
+		name = prompt("Enter Name");
+		document.write("Hi " + name+ "\n how are you? "); //making use of the variable
+		distance = parseInt(prompt("Enter distance in (kilometres)"));
+		speed = parseInt(prompt("Enter speed in  (hours/km)"));
+		
+		document.write("<br>");
+		document.write("<br>");
+		
+		var time = distance/speed;
+		
+		
+		
+		if(speed >= 100){
+			document.write("You are getinng there in ",time," hours");
+			document.write("<br>");
+			document.write("You are quite fast ! 😎");
+			}
+		else{
+			document.write("You are getinng there in ",time," hours");
+			document.write("<br>");
+			document.write("Don't go above the speed limit ! 🐱‍👓");
+		}
+	
+	</script>
+  </head>
+  <body>
+	<br>
+	<br>
+	<a href="page2.html">Click here for speed calculator</a>
+	<br>
+	<br>
+	<img src="car.jpg" alt="car" width="500" height="500">
+	
+  </body>
+</html>

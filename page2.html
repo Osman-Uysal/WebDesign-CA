@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JS demo</title>
+	<!--  css  -->
+	<link href="myStyles.css" rel="stylesheet" >
+	
+	<!-- javascript -->
+	<script type="text/javascript">
+		
+		document.write("<h1>Speed Calculator</h1>"); //using HTML tags
+		
+		//variables for calculations
+		var name;
+		var distance;
+		var time;
+		
+		
+		//asking the user for input
+		name = prompt("Enter Name");
+		document.write("Hi " + name+ "\n how are you? "); 
+		distance = parseInt(prompt("Enter distance in (kilometres)"));
+		time = parseInt(prompt("Enter time (hours)"));
+		
+		document.write("<br>");
+		document.write("<br>");
+		
+		var speed = distance/time;
+		
+		
+		//if statements
+		if(speed >= 100){
+			document.write("Your speed is ",speed," km/hr");
+			document.write("<br>");
+			document.write("You are quite fast ! 😎");
+			}
+		else{
+			document.write("Your speed is ",speed," km/hr");
+			document.write("<br>");
+			document.write("Don't go above the speed limit ! 🐱‍👓");
+		}
+		
+	</script>
+  </head>
+  <body>
+
+	<a href="js-index.html">Click to go back to the time calculator</a>
+	
+  </body>
+</html>
